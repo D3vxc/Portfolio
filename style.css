@@ -1,0 +1,249 @@
+#HeaderDiv a.navbar-brand {
+    font-family: "brush script", cursive;
+    font-size: 25px;
+    color: #C5C6D0;
+}
+
+*{
+    font-family: "brush script", cursive;
+   
+}
+
+#navbarCollapse li b {
+    color: #C5C6D0;
+}
+
+.fullscreen_bg {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.fullscreen_bg_video {
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#Home {
+    height: auto;
+    padding-bottom: 40px;
+    color: #fff;
+    font-weight: bold
+}
+
+#HomeRow {
+    padding-top: 7%;
+}
+
+#HomeRow a i.fa {
+    color: #ffffff;
+}
+
+#HomeRow div.col-lg-offset-3 {
+    background: rgba(0, 0, 0, 0.7);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(70, 148, 96);
+}
+
+#TechnicalSummary {
+    height: auto;
+    padding-bottom: 40px;
+    color: #fff;
+    background-attachment: fixed;
+    background-image: url('img6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+#TechnicalSummaryRow {
+    padding-top: 7%;
+}
+
+#TechnicalSummary h1 {
+    font-family: Monotype Corsiva;
+}
+
+#Qualifications {
+    background-attachment: fixed;
+    background-image: url('Images/background-.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    padding-bottom: 40px;
+    color: #000000;
+}
+
+#QualificationsRow {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#QualificationsRow div.col-lg-offset-1 {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0px 0px 18px rgb(30, 227, 220);
+
+}
+
+#Qualifications table {
+    width: 100%;
+    margin-top: 50px;
+}
+
+#Qualifications table tr td {
+    padding-bottom: 20px;
+}
+
+#Qualifications table tr td:first-child {
+    width: 30%;
+    padding-left: 10px;
+}
+
+#Skills {
+    background-attachment: fixed;
+    background-image: url('Images/background-.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    padding-bottom: 40px;
+    color: #000000;
+}
+
+#SkillsRow {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#SkillsRow div.col-lg-offset-5 {
+    padding: 10px;
+    background-color: #DCDCDC;
+    border-radius: 8px;
+    box-shadow: 0px 0px 18px #87CDEE;
+    opacity: 0.8;
+}
+
+#Skills table {
+    width: 100%;
+    margin-top: 50px;
+}
+
+#Skills table tr td {
+    padding-bottom: 20px;
+}
+
+#Skills table tr td:first-child {
+    width: 30%;
+    padding-left: 10px;
+}
+
+
+
+#Project {
+    height: auto;
+    padding-bottom: 40px;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+#ProjectRow h1 {
+    color: #000000;
+    font-family: Monotype Corsiva;
+}
+
+#Project{
+    background-image: url("Images/project.jpg");
+    z-index: -1;
+}
+/* .video-project{
+    height: auto;
+    width: auto;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    background-size: cover;
+    position: relative;
+} */
+
+#Project div.col-lg-3 {
+    margin-bottom: 20px;
+}
+
+.ContainerImage {
+    position: relative;
+    width: 70%;
+    padding: 20px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    /* background: rgba(0, 0, 0, 0.7); */
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.ContainerImage:hover .overlay {
+    opacity: 1;
+}
+
+.ContainerImage:hover .image {
+    transform: scale(1.5, 1.5);
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@media(max-width:768px) {
+    .fullscreen_bg_video {
+        left: -160%;
+        width: 260%;
+    }
+
+    #TechnicalSummary {
+        height: auto;
+    }
+}
+
+@media(max-width:992px) {
+    #HomeRow {
+        padding-top: 17%;
+    }
+
+    #TechnicalSummaryRow {
+        padding-top: 17%;
+    }
+}
